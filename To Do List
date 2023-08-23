@@ -1,0 +1,28 @@
+def create_todo_list():
+  """Creates a to-do list."""
+  todo_list = []
+  return todo_list
+
+def add_item_to_todo_list(todo_list, item):
+  """Adds an item to the to-do list."""
+  todo_list.append(item)
+
+def remove_item_from_todo_list(todo_list, item):
+  """Removes an item from the to-do list."""
+  todo_list.remove(item)
+
+def print_todo_list(todo_list):
+  """Prints the to-do list."""
+  for item in todo_list:
+    print(item)
+
+def main():
+  """The main function."""
+  todo_list = create_todo_list()
+  add_item_to_todo_list(todo_list, "Coding")
+  add_item_to_todo_list(todo_list, "Reading books")
+  remove_item_from_todo_list(todo_list, "Exploring new things")
+  print_todo_list(todo_list)
+
+if __name__ == "__main__":
+  main()
